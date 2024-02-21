@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* 
+.Card{
+    height: 400px;
+    width: 800px;
+    box-shadow: -3px 6px 5px 0px #2b2b2b;
+    transition: all .3s ease-in-out;
+
+    transform: scale(1);
+    perspective: 600px;
+} */
+
+
+
+/* .Card:hover {
+    box-shadow: -3px 18px 20px 0px #683B35;
+
+    z-index: 10;
+    transform: scale(1.1);
+} */
+
+.bodyText {
+    font-family: "Festive", cursive;
+    font-weight: 800;
+    font-style: normal;
+    background: linear-gradient(to right, aqua , antiquewhite);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}  
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    background: linear-gradient(to right, aqua , antiquewhite);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+
+#Card {
+    margin: auto;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    width: 800px;
+    height: 400px;
+    border-radius: 20px;
+    transition: .2s;
+    transform: perspective(1000px);
+    filter: brightness(1);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 0 0 rgba(48, 65, 0, 0.5);
+}
+#Card:hover {
+    box-shadow: -3px 18px 20px 0px #683B35;
+
+    z-index: 10;
+    transform: scale(1.1);
+}
+
+.madeBy {
+    margin: auto;
+    position: fixed;
+    bottom: 0;right: 0;
+}
