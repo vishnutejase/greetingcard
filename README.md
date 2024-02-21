@@ -1,1 +1,1 @@
-## Greeting Card mady for UI Desgin assignment
+## Greeting Card made for UI Desgin assignment
