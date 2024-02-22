@@ -1,5 +1,4 @@
 const card = document.getElementById("Card");
-const videoBg = document.getElementById("bgVideo");
 
 let rect = card.getBoundingClientRect();
 let centerX = rect.left + rect.width / 2;
@@ -28,7 +27,6 @@ window.addEventListener("resize", function (event) {
 })
 
 card.addEventListener("mousemove", function (event) {
-  videoBg.style.visibility = "visible";
   const rotationX = calculateRotation(event.x, centerX);
   const rotationY = calculateRotation(event.y, centerY);
   card.style.transform = `perspective(1500px) rotateY(${rotationX}deg) rotateX(${-rotationY}deg) translateZ(30px) `;
@@ -39,7 +37,6 @@ card.addEventListener("mousemove", function (event) {
 })
 
 card.addEventListener("mouseleave", function (event) {
-  videoBg.style.visibility = "hidden";
   card.style.transform = `perspective(1000px)`;
   card.style.width = `800px`;
   card.style.height = `400px`;
